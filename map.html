@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>학과소개</title>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+      $(document).ready(function(){
+         $("#bottom").load("./bottom.html")
+     
+      });
+</script>  
+<script>
+	
+	var elements = document.getElementsByClassName("column");
+for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "100%";
+  }
+   function indo(){
+		
+		location.href="https://www.google.com/maps/place/%EB%A7%88%EB%93%9C%EB%9D%BC%EC%8A%A4+%ED%81%AC%EB%A6%AC%EC%8A%A4%ED%8B%B0%EC%95%88+%EB%8C%80%ED%95%99/@12.9211251,80.1198729,17z/data=!3m1!4b1!4m5!3m4!1s0x3a525f150f0cc6fb:0xa49c35a74edfb973!8m2!3d12.9211251!4d80.1220616";
+	}
+	 function korea(){
+		
+		location.href="https://www.google.com/maps/place/%EC%84%B1%EA%B3%B5%ED%9A%8C%EB%8C%80%ED%95%99%EA%B5%90/@37.4872325,126.8231315,17z/data=!3m1!4b1!4m5!3m4!1s0x357b6261e34e06e3:0xcbd0485192bc91e6!8m2!3d37.4872325!4d126.8253202";
+	}
+</script>
+<style>
+	.column{
+		background: seashell;
+   border-radius: 1rem;
+   height: 15%;
+    text-align: center;
+    width:96%;
+        border: solid 1px;
+    margin-top: 2%;
+	}
+	.row{
+		    background: cornsilk;
+		    margin-top: 3rem;
+		position: fixed;
+    width: 96%;
+    height: 80%;
+	}
+</style>
+</head>
+
+
+<body>
+<div style="left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 10;
+        background-color: aliceblue;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    opacity: 0;
+    opacity: 1;" id="tabber" class="tabber">
+      <li style="	text-align: center;
+    width: 15%;
+    margin-bottom: 3px!important;
+    background-color: aliceblue;
+    /* border: 1px solid #eee; */
+    display: inline-block;
+    font-size: 10px;" class="liclass" title="YouTube" target="_blank" rel="nofollow">
+      	<a style="display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 14px;
+    color: #444;
+    text-decoration: none;" href="javascript:void(0);" onclick="test();" title="YouTube" target="_blank" rel="nofollow">
+      		<img style="width:20px;" src="./뒤로가기.png"><span class="spann">  </span></a>
+</li>
+      	<span style="  width: 70%;  line-height: 3rem;
+    margin-left: 4.5rem;
+    font-size: 25px;" class="spann"> 오시는길   </span>
+    </div>
+<div class="row">
+  <div onclick="korea()" class="column">
+    <h2>한국 > </h2>
+  </div>
+  <div onclick="indo()" class="column" >
+    <h2>인도 ></h2>
+  </div>
+  
+
+
+
+<div id="bottom"></div>
+</body>
+</html>

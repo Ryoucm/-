@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>학교로고</title>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+      $(document).ready(function(){
+         $("#bottom").load("./bottom.html")
+       
+      });
+</script>  
+<style>
+	.logo{
+	    margin: auto;
+    position: relative;
+    margin-top: 7%;
+    width: 50%;
+    height: 30%;
+    left: 25%;
+	}
+	.logo1{
+		margin: auto;
+    position: relative;
+    margin-top: 3%;
+    width: 50%;
+    height: 30%;
+    left: 25%;
+	}
+	.btn{
+		height:70px;
+		width:70px;
+	}
+	.mainbtn{
+		padding:0;
+		color: #666666;
+    text-decoration: none;
+    font-size: 11pt;
+    line-height: 1.2em;
+    font-weight: bold;
+    text-align: center;
+		border: 0;
+    width: 23%;
+    background: transparent;
+    height: 120px;
+	}
+</style>
+<script>
+	
+	function myFunction(){
+	
+	}
+	function introduce(){
+		
+		location.href="/쉽게배우는%20웹앱%20예제파일/ex02-01/1.before/introduce.html";
+	}
+	function studentActivity(){
+		location.href="/쉽게배우는%20웹앱%20예제파일/ex02-01/1.before/studentActivity.html";
+	}
+	function scheduele(){
+		location.href="/쉽게배우는%20웹앱%20예제파일/ex02-01/1.before/schedule.html";
+	}
+	function faculty(){
+		location.href="/쉽게배우는%20웹앱%20예제파일/ex02-01/1.before/faculty.html";
+	}
+	function map(){
+		location.href="/쉽게배우는%20웹앱%20예제파일/ex02-01/1.before/map.html";
+	}
+	function touniv(){
+		location.href="http://skhu.ac.kr/intro.html";
+	}
+	function glocal(){
+		location.href="http://ecareer.skhu.ac.kr/icons/app/cms/?html=/home/int6_1.html&shell=/index.shell:240";
+	}
+	function naver(){
+		location.href="https://cafe.naver.com/glocalit.cafe";
+	}
+</script>
+</head>
+
+ <img class="logo" src="./로고.PNG"alt="submit" />
+ <img class="logo1" src="./로고1.PNG"alt="submit" />
+<br>
+<hr>
+<button class="mainbtn" onclick="introduce()" >
+	
+	    <img src="./학과안내.png" class="btn" alt="submit" />
+
+학과소개</button>
+<button class="mainbtn" onclick="faculty()" >
+	
+	    <img src="./교수님소개.png" class="btn" alt="submit" />
+
+교수님소개</button>
+
+<button class="mainbtn" onclick="studentActivity()" >
+	
+	    <img src="./학생활동.png" class="btn" alt="submit" />
+
+인도창소개</button>
+
+<button class="mainbtn" onclick="map()" >
+	
+	    <img src="./오시는길.png" class="btn" alt="submit" />
+
+지도</button>
+
+<button onclick="touniv()" style="left: 10%;
+    position: relative;" class="mainbtn" onclick="gotouniv()" >
+	
+<img style="width:35px; height:35px;" src="./홈페이지.PNG" class="btn" alt="submit" />
+	   
+	    <p style="font-size:11px">홈페이지</p>   
+</button>
+<button onclick="glocal()" style="left: 10%;
+    position: relative;" class="mainbtn" onclick="gotouniv()" >
+	
+<img style="width:35px; height:35px;" src="./이커리어.PNG" class="btn" alt="submit" />
+	  <p style="font-size:11px">글로컬센터</p>     
+</button>
+<button onclick="naver()" style="left: 10%;
+    position: relative;" class="mainbtn" onclick="gotouniv()" >
+	
+<img style="width:35px; height:35px;" src="./카페.jpg" class="btn" alt="submit" />
+	<p style="font-size:11px">네이버카페</p>   
+</button>
+<div id="bottom"></div>
+
+<body style="background: cornsilk;">
+
+</body>
+</html>
